@@ -1,7 +1,7 @@
 ﻿-- REMIXER!
 -- by Garran Plum
 --
--- Collects in one monument any parts from the game or other mods.
+-- Remix parts from the base game, from any mod, or from your own files!
 -- Requires no code changes (only config changes) to add parts.
 -- An example of simple, declarative modding with GPS.
 
@@ -19,9 +19,9 @@
 -- You can change this line anytime and hot reload Foundation (Ctrl-Shift-R) to see changes.
 
 -- MY CONFIG File
-local configFile = "configImport.lua"
+local configFile = "configFbx.lua"
 
--- To remix, add category names and part names in that file.
+-- To remix, add, remove, and change the category names and part names in that file.
 
 -- SAMPLE MIXES
 --
@@ -29,7 +29,8 @@ local configFile = "configImport.lua"
 -- The basic config.lua, used if you change nothing else, loads only vanilla or built-in parts.
 -- You can see a full list of vanilla part names here:
 -- https://www.polymorph.games/foundation/modding/assets/building_part
---
+
+
 -- SAMPLE 2: Coke Float
 -- The configImport.lua file shows an example of importing parts from a dependency.
 -- You must have the exact part ID used by that mod to register the part.
@@ -39,12 +40,12 @@ local configFile = "configImport.lua"
 -- It is good pratice to declare your dependencies in mod.json.
 -- Remixer does not list Barrel O'Fish as a dependency because the base config.lua doesn't use it.
 -- An example modFishDependency.json file is included which you can use to replace mod.json.
---
+
 -- SAMPLE 3: Chocolate Sundae with Hot Fudge
 -- The configFbx.lua file shows an example of adding your own .fbx files to your mod.
--- You can remix any combination of vanilla and dependency parts and parts from your .fbx files.
+-- You can remix any combination of vanilla and dependency parts with parts from your .fbx files.
 -- The example includes a vanilla part and a part from an .fbx file.
---
+
 -- NAMES IN THE USER INTERFACE
 -- Part names in the building dialog come from the text.json file in localization\en.
 -- Changing the categories in config.lua will require updating that file.

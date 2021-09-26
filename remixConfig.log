@@ -1,5 +1,7 @@
 {
 	modelFiles = {
+		friends = {"FRIENDS"
+			}
 	}, 
 	jobs = {
 	}, 
@@ -14,6 +16,14 @@
 				}
 	}, 
 	categories = {
+		FRIENDS = {
+			Coon_Cat = {
+				Order = 2
+				}, 
+			Collie_Dog = {
+				Order = 1
+				}
+		}, 
 		FISH = {
 			BUILDING_PART_Trout = {
 				BuildingRegistered = true, 
@@ -47,19 +57,21 @@
 	}, 
 	monuments = {
 		REMIX = {
-			Type = "MODS", 
-				Categories = {
-					FISH = {
+			Categories = {
+				FRIENDS = {
+					Order = 1
 					}, 
-					STORAGE = {
-					}, 
-					TOPIARY = {
-					}
+				FISH = {
+				}, 
+				STORAGE = {
+				}, 
+				TOPIARY = {
 				}
 			}
+		}
 	}, 
 	workplaces = {
 	}, 
 	version = "2.8.0", 
-		modName = "remixer"
+		modName = "REMIX"
 		}
