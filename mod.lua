@@ -95,6 +95,10 @@ GP:load("gp/generators.lua")
 -- Defines all workplace functions named in the config.
 GP:load("gp/workplaces.lua")
 
+-- EXECUTE FILE: Override Functions
+-- Defines all override functions used by all GP mods.
+GP:load("gp/overrides.lua")
+
 -- EXECUTE FILE: Startup Sequence
 -- Defines the startup sequence for this mod.
 GP:load("gp/startup.lua")

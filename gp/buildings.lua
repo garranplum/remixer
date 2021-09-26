@@ -62,6 +62,9 @@ function GP.registerMonument(buildingName, config)
         -- Get the parts in this category.
         local categoryPartsList = config.categories[categoryKey]
 
+        -- Override all parts in the category with free/moveable.
+        GP:override(categoryPartsList)
+
         -- Sort parts by Order
         local orderedPartKeys = {}
         for partKey, partConfig in pairs(categoryPartsList) do
