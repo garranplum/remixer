@@ -21,15 +21,23 @@ function GP:override(partId)
 
     -- Register a cost list for this part with no required resources.
     myMod:register({
-        DataType = GP:datatypes().part.costList,
+        DataType = "BUILDING_PART_COST_LIST",
         Id = randomId,
-        BuildingPartCostList = {onePartEntry}
+        BuildingPartCostList = {
+            {
+                BuildingPart = partId,
+                BuildingPartCost = {
+                    BuildRightTaxes = {},
+                    RessourcesNeeded = {}
+                }
+            }
+        }
     })
 
     -- Override the game's balancing rules with this new empty cost/resource list.
     myMod:override({
-        Id = GP:datatypes().override.balancing,
-        BuildingCostOverrideList = {randomId}
+        Id = "DEFAULT_BALANCING",
+        BuildingCostOverrideList = {Action = "APPEND", randomId}
     })
 
     -- Override the part's moveable.
