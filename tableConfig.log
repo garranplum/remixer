@@ -1,0 +1,53 @@
+{
+	monuments = {
+		REMIX = {
+			Type = "MODS", 
+				Categories = {
+					FLORA = {
+					}, 
+					STORAGE = {
+					}, 
+					FURNITURE = {
+					}
+				}
+			}
+	}, 
+	jobs = {
+	}, 
+	modName = "remixer", 
+		modelFiles = {
+		}, 
+		categories = {
+			FLORA = {
+				BUILDING_PART_LUSH_GARDEN_SMALL_TREE = {
+					BuildingRegistered = true, 
+						AssetRegistered = true
+						}
+			}, 
+			STORAGE = {
+				BUILDING_PART_MARKET_BARRELS = {
+					BuildingRegistered = true, 
+						AssetRegistered = true
+						}
+			}, 
+			FURNITURE = {
+				BUILDING_PART_MARKET_BENCH = {
+					BuildingRegistered = true, 
+						AssetRegistered = true
+						}
+			}
+		}, 
+		workplaces = {
+		}, 
+		version = "2.8.0", 
+			nodeTypes = {
+			}, 
+			remix = {
+				FLORA = {"BUILDING_PART_SHRINE_FLOWER_RED", "BUILDING_PART_SHRINE_FLOWER_BLUE", "BUILDING_PART_LUSH_GARDEN_SMALL_TREE"
+							}, 
+				STORAGE = {"BUILDING_PART_MARKET_BARRELS"
+					}, 
+				FURNITURE = {"BUILDING_PART_MARKET_BENCH"
+					}
+			}
+		}

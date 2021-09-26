@@ -1,7 +1,7 @@
 {
 		"MONUMENT_LIST":{
-			"REMIXER": "Remixer!",
-			"REMIXER_DESC": "Remix all your favorite mods and building parts.",
+			"REMIX": "Remixer!",
+			"REMIX_DESC": "Remix all your favorite mods and building parts.",
 			"CATEGORY_FLORA": "Flowers & Trees",
 			"CATEGORY_FURNITURE": "Furniture",
 			"CATEGORY_STORAGE": "Storage"

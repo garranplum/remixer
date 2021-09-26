@@ -18,14 +18,6 @@
 			BUILDING_PART_LUSH_GARDEN_SMALL_TREE = {
 				BuildingRegistered = true, 
 					AssetRegistered = true
-					}, 
-			BUILDING_PART_SHRINE_FLOWER_RED = {
-				BuildingRegistered = true, 
-					AssetRegistered = true
-					}, 
-			BUILDING_PART_SHRINE_FLOWER_BLUE = {
-				BuildingRegistered = true, 
-					AssetRegistered = true
 					}
 		}, 
 		STORAGE = {
@@ -38,15 +30,11 @@
 			BUILDING_PART_MARKET_BENCH = {
 				BuildingRegistered = true, 
 					AssetRegistered = true
-					}, 
-			BUILDING_PART_MARKET_FENCE = {
-				BuildingRegistered = true, 
-					AssetRegistered = true
 					}
 		}
 	}, 
 	monuments = {
-		REMIXER = {
+		REMIX = {
 			Type = "MODS", 
 				Categories = {
 					FLORA = {
