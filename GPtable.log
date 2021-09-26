@@ -18,6 +18,14 @@
 			BUILDING_PART_LUSH_GARDEN_SMALL_TREE = {
 				BuildingRegistered = true, 
 					AssetRegistered = true
+					}, 
+			BUILDING_PART_SHRINE_FLOWER_RED = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_SHRINE_FLOWER_BLUE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
 					}
 		}, 
 		STORAGE = {

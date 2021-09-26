@@ -117,6 +117,9 @@ function GP:config()
     -- Remix each category on the list.
     for category, partsList in pairs(config.remix) do 
 
+        -- Add the category in config.categories.
+        config.categories[category] = {}
+
         -- Remix each part in the category.
         for index, partId in ipairs(partsList) do
 
@@ -127,7 +130,6 @@ function GP:config()
             }
 
             -- Add the partEntry to the config category
-            config.categories[category] = {}
             config.categories[category][partId] = partEntry
 
         end
