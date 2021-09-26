@@ -6,36 +6,40 @@
 	nodeTypes = {
 	}, 
 	remix = {
-		FLORA = {"BUILDING_PART_SHRINE_FLOWER_RED", "BUILDING_PART_SHRINE_FLOWER_BLUE", "BUILDING_PART_LUSH_GARDEN_SMALL_TREE"
-					}, 
-		STORAGE = {"BUILDING_PART_MARKET_BARRELS"
-			}, 
-		FURNITURE = {"BUILDING_PART_MARKET_BENCH"
-			}
+		FISH = {"BUILDING_PART_Roughy", "BUILDING_PART_Trout"
+				}, 
+		STORAGE = {"BUILDING_PART_MARKET_BARRELS", "BUILDING_PART_Crate"
+				}, 
+		TOPIARY = {"BUILDING_PART_OFFICINAL_GARDEN_BUSHY_PLANT", "BUILDING_PART_OFFICINAL_GARDEN_CLIMBER_PLANT"
+				}
 	}, 
 	categories = {
-		FLORA = {
-			BUILDING_PART_LUSH_GARDEN_SMALL_TREE = {
+		FISH = {
+			BUILDING_PART_Trout = {
 				BuildingRegistered = true, 
 					AssetRegistered = true
 					}, 
-			BUILDING_PART_SHRINE_FLOWER_RED = {
-				BuildingRegistered = true, 
-					AssetRegistered = true
-					}, 
-			BUILDING_PART_SHRINE_FLOWER_BLUE = {
+			BUILDING_PART_Roughy = {
 				BuildingRegistered = true, 
 					AssetRegistered = true
 					}
 		}, 
 		STORAGE = {
+			BUILDING_PART_Crate = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
 			BUILDING_PART_MARKET_BARRELS = {
 				BuildingRegistered = true, 
 					AssetRegistered = true
 					}
 		}, 
-		FURNITURE = {
-			BUILDING_PART_MARKET_BENCH = {
+		TOPIARY = {
+			BUILDING_PART_OFFICINAL_GARDEN_BUSHY_PLANT = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_OFFICINAL_GARDEN_CLIMBER_PLANT = {
 				BuildingRegistered = true, 
 					AssetRegistered = true
 					}
@@ -45,11 +49,11 @@
 		REMIX = {
 			Type = "MODS", 
 				Categories = {
-					FLORA = {
+					FISH = {
 					}, 
 					STORAGE = {
 					}, 
-					FURNITURE = {
+					TOPIARY = {
 					}
 				}
 			}

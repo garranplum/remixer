@@ -12,15 +12,10 @@ local modName = "remixer"
 
 -- MY CONFIG Remix
 local remix = {
-    FLORA = {
-        "BUILDING_PART_SHRINE_FLOWER_RED", "BUILDING_PART_SHRINE_FLOWER_BLUE",
-        "BUILDING_PART_LUSH_GARDEN_SMALL_TREE",
-    },
-    FURNITURE = {"BUILDING_PART_MARKET_BENCH"},
-    STORAGE = {"BUILDING_PART_MARKET_BARRELS"},
+    TOPIARY = {"BUILDING_PART_OFFICINAL_GARDEN_BUSHY_PLANT","BUILDING_PART_OFFICINAL_GARDEN_CLIMBER_PLANT"},
+    FISH = {"BUILDING_PART_Roughy","BUILDING_PART_Trout"},
+    STORAGE = {"BUILDING_PART_MARKET_BARRELS","BUILDING_PART_Crate"},
 }
-
-
 
 -- 
 --
@@ -49,18 +44,14 @@ function GP:config()
         nodeTypes = nodeTypes or {},
         jobs = jobs or {},
         workplaces = workplaces or {},
-        monuments = monuments or {},
+        monuments = monuments or {}
     }
-
 
     -- Create a remix monument.
-    config.monuments.REMIX = {
-        Categories = {},
-        Type = "MODS"
-    }
-    
+    config.monuments.REMIX = {Categories = {}, Type = "MODS"}
+
     -- Remix each category on the list.
-    for category, partsList in pairs(config.remix) do 
+    for category, partsList in pairs(config.remix) do
 
         -- Add the category in config.categories.
         config.categories[category] = {}
@@ -70,8 +61,8 @@ function GP:config()
 
             -- Build a partEntry
             local partEntry = {
-                    AssetRegistered = true,
-                    BuildingRegistered = true
+                AssetRegistered = true,
+                BuildingRegistered = true
             }
 
             -- Add the partEntry to the config category

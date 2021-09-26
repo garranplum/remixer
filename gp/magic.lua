@@ -10,34 +10,30 @@ local myMod, GP = ...
 GP:log("magic.lua", GP:version())
 
 local magicWords = {
-    building = {idPrefix = "BUILDING_", descSuffix = "_DESC"},
+    building = {idPrefix = "BUILDING_", descSuffix = "_DESC", icon = "GP_ICON"},
     part = {
         separator = "_Part",
         idPrefix = "BUILDING_PART_",
         descSuffix = "_DESC",
-        overrides = "GP_OVERRIDE_PART_LIST",
+        overrides = "GP_OVERRIDE_PART_LIST"
     },
     prefab = {folder = "Prefab", idPrefix = "PREFAB_"},
     model = {folder = "models", extension = ".fbx"},
     path = {namePrefix = "Path_"},
     category = {namePrefix = "CATEGORY_"},
     generator = {idSuffix = "_GENERATOR", functionIdSuffix = "_GENERATOR_BASE"},
-    job = {descSuffix = "_DESC"},
+    job = {descSuffix = "_DESC"}
 }
 
 -- GP FUNCTION Magic Words
 -- Returns a copy of the magic words table.
 -- FUNCTIONAL, CLOSURE
-function GP:magicWords()
-    return GP:copyTable(magicWords)
-end
+function GP:magicWords() return GP:copyTable(magicWords) end
 
 -- GP UTILITY FUNCTION fbx Name
 -- PURE LUA
 -- PURE FUNCTIONAL, MAGIC WORDS
-function GP:fbxName(partName)
-    return partName .. GP:magicWords().part.separator
-end
+function GP:fbxName(partName) return partName .. GP:magicWords().part.separator end
 
 -- GP UTILITY FUNCTION Prefab Path
 -- PURE LUA
@@ -59,6 +55,4 @@ end
 -- GP UTILITY FUNCTION Part ID
 -- PURE LUA
 -- PURE FUNCTIONAL, MAGIC WORDS
-function GP:partId(partName)
-    return GP:magicWords().part.idPrefix .. partName
-end
+function GP:partId(partName) return GP:magicWords().part.idPrefix .. partName end

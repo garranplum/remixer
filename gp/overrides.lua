@@ -28,6 +28,7 @@ function GP:override(partId)
                 BuildingPart = partId,
                 BuildingPartCost = {
                     BuildRightTaxes = {},
+                    UpkeepCost = {},
                     RessourcesNeeded = {}
                 }
             }
@@ -43,7 +44,8 @@ function GP:override(partId)
     -- Override the part's moveable.
     myMod:override({
         Id = partId,
-        IsMovableWhenBuilt = true
+        IsMovableWhenBuilt = true,
+        IsOnlyAttached = false,
     })
 
     -- No returns. Function is called only for side effects.
