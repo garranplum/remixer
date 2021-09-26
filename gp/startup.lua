@@ -18,6 +18,9 @@ function GP:startMod()
 
     GP:log("Starting", config.modName, GP:version(), _VERSION)
 
+    -- Log remixed config for diagnostics and development.
+    GP:writeTable(config,"remixConfig.log")
+
     -- STARTUP Register Model Files
     GP:registerModelFiles()
     

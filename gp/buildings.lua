@@ -45,9 +45,6 @@ function GP.registerMonument(buildingName, config)
         end
     end
 
-    -- Diagnostic test of serializeTable and writeTable.
-    GP:writeTable(config)
-
     -- For each category in the monument...
     for index, categoryKey in ipairs(
         orderedCategoryKeys) do
