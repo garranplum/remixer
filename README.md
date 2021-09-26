@@ -1,5 +1,5 @@
-#REMIXER!
-##by Garran Plum
+# REMIXER!
+## by Garran Plum
 
 - Collects in one monument any parts from the game or other mods.
 - Requires no code changes (only config changes) to add parts.
