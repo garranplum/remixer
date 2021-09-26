@@ -14,21 +14,7 @@ function GP:override(partId)
 
         -- Build this part's entry for the list.
         local onePartEntry = {
-            BuildingPart = partId,
-            BuildingPartCost = {
-                BuildRightTaxes = {
-                    {
-                        Resource = "GOLD_COINS",
-                        Quantity = 0
-                    }
-                },
-                RessourcesNeeded = {
-                    {
-                        Resource = "WOOD",
-                        Quantity = 0
-                    }
-                }
-            }
+            BuildingPart = partId
         }
 
         -- Setup for random ID. Creates unique IDs for each registration.
@@ -46,7 +32,6 @@ function GP:override(partId)
     myMod:override({
         Id = GP:datatypes().override.balancing,
         BuildingCostOverrideList = {
-            Action = GP:datatypes().action.append,
             randomId
         },
     })
