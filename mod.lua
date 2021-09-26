@@ -11,9 +11,6 @@
 -- Join The Orchard, a GP modding Discord:
 -- https://discord.gg/aeehVjMtzB
 --
--- Acknowledgements:
--- Contains GPS by Garran Plum. 
--- https://mod.io/members/garranplum
 -- 
 -- MODULE MOD.LUA
 -- Main Entrypoint & Loader
