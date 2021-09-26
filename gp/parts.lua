@@ -16,6 +16,8 @@ function GP:registerCategoryBuildingParts(modelFileName, category, categoryParts
     for partName, partConfig in pairs(categoryParts) do
         if (not partConfig.BuildingRegistered) then
             GP:registerBuildingPart(category, partName, partConfig)
+        else
+            GP:override(partName)
         end
     end
 end

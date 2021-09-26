@@ -45,6 +45,7 @@ function GP.registerMonument(buildingName, config)
         end
     end
 
+    -- Diagnostic test of serializeTable and writeTable.
     GP:writeTable(config)
 
     -- For each category in the monument...
@@ -61,9 +62,6 @@ function GP.registerMonument(buildingName, config)
 
         -- Get the parts in this category.
         local categoryPartsList = config.categories[categoryKey]
-
-        -- Override all parts in the category with free/moveable.
-        GP:override(categoryPartsList)
 
         -- Sort parts by Order
         local orderedPartKeys = {}
@@ -88,7 +86,12 @@ function GP.registerMonument(buildingName, config)
             if not partConfig.BuildingRegistered then
                 partPrefix = GP:magicWords().part.idPrefix
             end
-    
+
+            -- If not a GP part, override it's cost, resources, moveable.
+            if partConfig.BuildingRegistered then
+                GP:override(partKey)
+            end
+
             -- Add the part to the category parts list
             table.insert(categoryPartSet.BuildingPartList,
                          partPrefix .. partKey)
