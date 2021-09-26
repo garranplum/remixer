@@ -1,7 +1,7 @@
 {
 	"Name": "Remixer!",
 	"Author": "GarranPlum",
-	"Description": "Quickly a monument with your favorite buildings from the base game or from any other mod. Low code/no code with GPS.",
+	"Description": "Remix parts from your favorite mods and the base game to create your own monuments without code! Built with GPS.",
 	"Version": "1.0.0",
 
 	"Dependencies": []

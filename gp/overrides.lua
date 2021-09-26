@@ -1,7 +1,7 @@
 -- OVERRIDES.LUA
 -- by Garran Plum
 --
--- Overrides for built-in buildings.
+-- Overrides for remixed buildings.
 
 -- IMPORT GP OBJECT
 local myMod, GP = ... 
@@ -16,6 +16,18 @@ myMod:register({
         {
             BuildingPart = "BUILDING_PART_MARKET_BLUE_TENT",
             BuildingPartCost = {
+                BuildRightTaxes = {
+                    {
+                        Resource = "GOLD_COINS",
+                        Quantity = 0
+                    }
+                },
+                RessourcesNeeded = {
+                    {
+                        Resource = "WOOD",
+                        Quantity = 0
+                    }
+                }
             }
         }
     }
@@ -25,6 +37,6 @@ myMod:register({
 myMod:override({
     Id = "DEFAULT_BALANCING",
     BuildingCostOverrideList = {
-        "FISH_BARREL_BUILDING_PART_COST_LIST"
+        Action = "APPEND","FISH_BARREL_BUILDING_PART_COST_LIST"
     }
 })
