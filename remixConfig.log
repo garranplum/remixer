@@ -1,7 +1,5 @@
 {
 	modelFiles = {
-		friends = {"FRIENDS"
-			}
 	}, 
 	jobs = {
 	}, 
@@ -10,52 +8,12 @@
 	remix = {
 		FLORA = {"BUILDING_PART_SHRINE_FLOWER_RED", "BUILDING_PART_SHRINE_FLOWER_BLUE", "BUILDING_PART_LUSH_GARDEN_SMALL_TREE"
 					}, 
-		TOPIARY = {"BUILDING_PART_LUSH_GARDEN_OGIVE_BUSH", "BUILDING_PART_LUSH_GARDEN_OVALE_BUSH"
-				}, 
-		EDIBLES = {"BUILDING_PART_OFFICINAL_GARDEN_SPROUTS", "BUILDING_PART_OFFICINAL_GARDEN_SAGE"
-				}, 
-		FURNITURE = {"BUILDING_PART_SHRINE_STONE_BENCH", "BUILDING_PART_MARKET_BENCH"
-				}
+		STORAGE = {"BUILDING_PART_MARKET_BARRELS"
+			}, 
+		FURNITURE = {"BUILDING_PART_MARKET_BENCH"
+			}
 	}, 
 	categories = {
-		TOPIARY = {
-			BUILDING_PART_LUSH_GARDEN_OVALE_BUSH = {
-				BuildingRegistered = true, 
-					AssetRegistered = true
-					}, 
-			BUILDING_PART_LUSH_GARDEN_OGIVE_BUSH = {
-				BuildingRegistered = true, 
-					AssetRegistered = true
-					}
-		}, 
-		FURNITURE = {
-			BUILDING_PART_MARKET_BENCH = {
-				BuildingRegistered = true, 
-					AssetRegistered = true
-					}, 
-			BUILDING_PART_SHRINE_STONE_BENCH = {
-				BuildingRegistered = true, 
-					AssetRegistered = true
-					}
-		}, 
-		FRIENDS = {
-			Coon_Cat = {
-				Order = 2
-				}, 
-			Collie_Dog = {
-				Order = 1
-				}
-		}, 
-		EDIBLES = {
-			BUILDING_PART_OFFICINAL_GARDEN_SAGE = {
-				BuildingRegistered = true, 
-					AssetRegistered = true
-					}, 
-			BUILDING_PART_OFFICINAL_GARDEN_SPROUTS = {
-				BuildingRegistered = true, 
-					AssetRegistered = true
-					}
-		}, 
 		FLORA = {
 			BUILDING_PART_LUSH_GARDEN_SMALL_TREE = {
 				BuildingRegistered = true, 
@@ -69,6 +27,18 @@
 				BuildingRegistered = true, 
 					AssetRegistered = true
 					}
+		}, 
+		STORAGE = {
+			BUILDING_PART_MARKET_BARRELS = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}
+		}, 
+		FURNITURE = {
+			BUILDING_PART_MARKET_BENCH = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}
 		}
 	}, 
 	monuments = {
@@ -76,15 +46,10 @@
 			Categories = {
 				FLORA = {
 				}, 
+				STORAGE = {
+				}, 
 				FURNITURE = {
-				}, 
-				TOPIARY = {
-				}, 
-				EDIBLES = {
-				}, 
-				FRIENDS = {
-					Order = 1
-					}
+				}
 			}
 		}
 	}, 
