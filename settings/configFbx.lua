@@ -12,33 +12,32 @@ local modName = "REMIX"
 
 -- MY CONFIG Remix
 local remix = {
-    TOPIARY = {"BUILDING_PART_OFFICINAL_GARDEN_BUSHY_PLANT","BUILDING_PART_OFFICINAL_GARDEN_CLIMBER_PLANT"},
-    FISH = {"BUILDING_PART_Roughy","BUILDING_PART_Trout"},
-    STORAGE = {"BUILDING_PART_MARKET_BARRELS","BUILDING_PART_Crate"},
+    TOPIARY = {
+        "BUILDING_PART_LUSH_GARDEN_OGIVE_BUSH",
+        "BUILDING_PART_LUSH_GARDEN_OVALE_BUSH",
+
+    },
+    EDIBLES = {
+        "BUILDING_PART_OFFICINAL_GARDEN_SPROUTS",
+        "BUILDING_PART_OFFICINAL_GARDEN_SAGE"
+    },
+    FURNITURE = {"BUILDING_PART_SHRINE_STONE_BENCH","BUILDING_PART_MARKET_BENCH"},
+    FLORA = {
+        "BUILDING_PART_SHRINE_FLOWER_RED", "BUILDING_PART_SHRINE_FLOWER_BLUE",
+        "BUILDING_PART_LUSH_GARDEN_SMALL_TREE"
+    }
 }
 
 -- MY CONFIG Model Files
-local modelFiles = {
- friends = {"FRIENDS"}
-}
+local modelFiles = {friends = {"FRIENDS"}}
 
 -- MY CONFIG Categories
 local categories = {
-    FRIENDS = {
-        Coon_Cat = {Order = 2}, 
-        Collie_Dog = {Order = 1}, 
-    },
+    FRIENDS = {Coon_Cat = {Order = 2}, Collie_Dog = {Order = 1}}
 }
 
 -- MY CONFIG Monuments
-local monuments = {
-    [modName] = {
-        Categories = {
-            FRIENDS = {Order = 1},
-        },
-    },
-}
-
+local monuments = {[modName] = {Categories = {FRIENDS = {Order = 1}}}}
 
 -- 
 --
@@ -71,7 +70,8 @@ function GP:config()
     }
 
     -- Create a remix monument.
-    config.monuments[modName] = config.monuments[modName] or {Categories = {}, Type = "MODS"}
+    config.monuments[modName] = config.monuments[modName] or
+                                    {Categories = {}, Type = "MODS"}
 
     -- Remix each category on the list.
     for category, partsList in pairs(config.remix) do

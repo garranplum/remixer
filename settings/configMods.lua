@@ -12,9 +12,12 @@ local modName = "remixer"
 
 -- MY CONFIG Remix
 local remix = {
-    TOPIARY = {"BUILDING_PART_OFFICINAL_GARDEN_BUSHY_PLANT","BUILDING_PART_OFFICINAL_GARDEN_CLIMBER_PLANT"},
-    FISH = {"BUILDING_PART_Roughy","BUILDING_PART_Trout"},
-    STORAGE = {"BUILDING_PART_MARKET_BARRELS","BUILDING_PART_Crate"},
+    TOPIARY = {
+        "BUILDING_PART_OFFICINAL_GARDEN_BUSHY_PLANT",
+        "BUILDING_PART_OFFICINAL_GARDEN_CLIMBER_PLANT"
+    },
+    FISH = {"BUILDING_PART_Roughy", "BUILDING_PART_Trout"},
+    STORAGE = {"BUILDING_PART_MARKET_BARRELS", "BUILDING_PART_Crate"}
 }
 
 -- 
@@ -48,7 +51,8 @@ function GP:config()
     }
 
     -- Create a remix monument.
-    config.monuments.REMIX = {Categories = {}, Type = "MODS"}
+    config.monuments[modName] = config.monuments[modName] or
+                                    {Categories = {}, Type = "MODS"}
 
     -- Remix each category on the list.
     for category, partsList in pairs(config.remix) do
@@ -71,11 +75,10 @@ function GP:config()
         end
 
         -- Add the category to the monument.
-        config.monuments.REMIX.Categories[category] = {}
+        config.monuments[modName].Categories[category] = {}
 
     end
 
     -- Return canonized copy.
     return GP:copyTable(config)
 end
-

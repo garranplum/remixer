@@ -5,6 +5,7 @@
 			"CATEGORY_FLORA": "Flowers & Trees",
 			"CATEGORY_FURNITURE": "Furniture",
 			"CATEGORY_STORAGE": "Storage",
-			"CATEGORY_TOPIARY": "Topiary"
+			"CATEGORY_TOPIARY": "Topiary",
+			"CATEGORY_EDIBLES": "Herbs",
 		}
 }
