@@ -1,63 +1,165 @@
 {
 	modelFiles = {
-		friends = {"FRIENDS"
-			}
 	}, 
 	jobs = {
 	}, 
 	nodeTypes = {
 	}, 
 	remix = {
-		FLORA = {"BUILDING_PART_SHRINE_FLOWER_RED", "BUILDING_PART_SHRINE_FLOWER_BLUE", "BUILDING_PART_LUSH_GARDEN_SMALL_TREE"
-					}, 
-		TOPIARY = {"BUILDING_PART_LUSH_GARDEN_OGIVE_BUSH", "BUILDING_PART_LUSH_GARDEN_OVALE_BUSH"
-				}, 
-		EDIBLES = {"BUILDING_PART_OFFICINAL_GARDEN_SPROUTS", "BUILDING_PART_OFFICINAL_GARDEN_SAGE"
-				}, 
-		FURNITURE = {"BUILDING_PART_SHRINE_STONE_BENCH", "BUILDING_PART_MARKET_BENCH"
-				}
+		MAX = {"BUILDING_PART_AUTOMATE_FOUNTAIN_BASIN", "BUILDING_PART_AUTOMATE_FOUNTAIN_BIRD", "BUILDING_PART_AUTOMATE_FOUNTAIN_JACQUEMART", "BUILDING_PART_AUTOMATE_FOUNTAIN_STEPPED_BASE", "BUILDING_PART_AUTOMATE_FOUNTAIN_TOP", "BUILDING_PART_AUTOMATE_FOUNTAIN_TOWER", "BUILDING_PART_BAKERY", "BUILDING_PART_BLACKSMITH", "BUILDING_PART_BREWERY", "BUILDING_PART_BUILDER_WORKSHOP", "BUILDING_PART_BUILDER_WORKSHOP_SCULPTURE_WORKSHOP", "BUILDING_PART_BUILDER_WORKSHOP_STAINED_GLASS_WORKSHOP", "BUILDING_PART_CHEESE_MAKER", "BUILDING_PART_COAL_HUT", "BUILDING_PART_COOPERAGE", "BUILDING_PART_CROSS_GOLDEN_CROSS", "BUILDING_PART_CROSS_HEXAGON_PEDESTAL", "BUILDING_PART_CROSS_HEXAGON_SMALL_PEDESTAL", "BUILDING_PART_CROSS_HEXAGON_STEPPED_BASE", "BUILDING_PART_CROSS_SQUARE_PEDESTAL", "BUILDING_PART_CROSS_SQUARE_SMALL_PEDESTAL", "BUILDING_PART_CROSS_SQUARE_STEPPED_BASE", "BUILDING_PART_DAIRY_FARM", "BUILDING_PART_DECORATIVE_BUSH", "BUILDING_PART_DECORATIVE_CYPRES", "BUILDING_PART_DECORATIVE_TREE", "BUILDING_PART_FENCE", "BUILDING_PART_FISHING_HUT", "BUILDING_PART_FORESTER", "BUILDING_PART_FOUNTAIN", "BUILDING_PART_GATE_BARRACKS", "BUILDING_PART_GATE_BRATTICE", "BUILDING_PART_GATE_BUTTRESS", "BUILDING_PART_GATE_DOOR", "BUILDING_PART_GATE_PORTICULLIS", "BUILDING_PART_GATE_ROUND_TOWER", "BUILDING_PART_GATE_ROUND_WATCHTOWER", "BUILDING_PART_GATE_SMALL_WINDOW", "BUILDING_PART_GATE_SMALL_WINDOW_CLOSED", "BUILDING_PART_GATE_SMALL_WINDOW_PLANK", "BUILDING_PART_GATE_TOWER", "BUILDING_PART_GATE_WALL_BANNER", "BUILDING_PART_GATE_WALL_FLAG", "BUILDING_PART_GATE_WALL_HERALDIC_BLUE", "BUILDING_PART_GATE_WALL_HERALDIC_SPLICED", "BUILDING_PART_GATE_WALL_HERALDIC_SPLIT", "BUILDING_PART_GATE_WALL_HERALDIC_STRIPED", "BUILDING_PART_GATE_WATCHTOWER", "BUILDING_PART_GATE_WINDOW", "BUILDING_PART_GATE_WOODEN_GATE", "BUILDING_PART_GATHERING_CAMP", "BUILDING_PART_GLASS_SMELTER", "BUILDING_PART_GOLD_SMELTER", "BUILDING_PART_GRANARY", "BUILDING_PART_HOP_FARM", "BUILDING_PART_HOUSING_CITIZEN_DENSITY_1", "BUILDING_PART_HOUSING_CITIZEN_DENSITY_2", "BUILDING_PART_HOUSING_SERF_DENSITY_1", "BUILDING_PART_HOUSING_SERF_DENSITY_2", "BUILDING_PART_HUNTERS_HUT", "BUILDING_PART_IRON_SMELTER", "BUILDING_PART_KNIGHT_STATUE", "BUILDING_PART_KNIGHT_STATUE_ALCOVED_PEDESTAL", "BUILDING_PART_KNIGHT_STATUE_BANNER", "BUILDING_PART_KNIGHT_STATUE_FEMALE_KNIGHT", "BUILDING_PART_KNIGHT_STATUE_GOLD_FEMALE_KNIGHT", "BUILDING_PART_KNIGHT_STATUE_MALE_ARCHER", "BUILDING_PART_KNIGHT_STATUE_MALE_KNIGHT", "BUILDING_PART_KNIGHT_STATUE_OCTOGONAL_PEDESTAL", "BUILDING_PART_KNIGHT_STATUE_OCTOGONAL_PLINTH", "BUILDING_PART_KNIGHT_STATUE_SMALL_BANNER", "BUILDING_PART_KNIGHT_STATUE_SMALL_OCTOGONAL_PEDESTAL", "BUILDING_PART_KNIGHT_STATUE_SQUARE_PEDESTAL", "BUILDING_PART_KNIGHT_STATUE_SQUARE_PLINTH", "BUILDING_PART_LUSH_GARDEN_BUSH", "BUILDING_PART_LUSH_GARDEN_BUSHES_PERGOLA", "BUILDING_PART_LUSH_GARDEN_DIAMOND_FLOWERBED", "BUILDING_PART_LUSH_GARDEN_ESPALIER_FENCE", "BUILDING_PART_LUSH_GARDEN_FLOWER_BUSH", "BUILDING_PART_LUSH_GARDEN_FOUNTAIN", "BUILDING_PART_LUSH_GARDEN_LARGE_TREE", "BUILDING_PART_LUSH_GARDEN_MEDIUM_TREE", "BUILDING_PART_LUSH_GARDEN_OGIVE_BUSH", "BUILDING_PART_LUSH_GARDEN_OVALE_BUSH", "BUILDING_PART_LUSH_GARDEN_PILAR", "BUILDING_PART_LUSH_GARDEN_QUATREFOIL_FLOWERBED", "BUILDING_PART_LUSH_GARDEN_ROSES_PERGOLA", "BUILDING_PART_LUSH_GARDEN_ROUND_BUSH", "BUILDING_PART_LUSH_GARDEN_ROUND_FLOWERBED", "BUILDING_PART_LUSH_GARDEN_SMALL_TREE", "BUILDING_PART_LUSH_GARDEN_STONE_BENCH", "BUILDING_PART_LUSH_GARDEN_WATER_BASIN", "BUILDING_PART_MARKET_BARRELS", "BUILDING_PART_MARKET_BENCH", "BUILDING_PART_MARKET_BLUE_TENT", "BUILDING_PART_MARKET_FENCE", "BUILDING_PART_MARKET_FOOD_SIGN", "BUILDING_PART_MARKET_FOOD_STALL", "BUILDING_PART_MARKET_GOODS_SIGN", "BUILDING_PART_MARKET_GOODS_STALL", "BUILDING_PART_MARKET_GREEN_TENT", "BUILDING_PART_MARKET_LUXURY_SIGN", "BUILDING_PART_MARKET_LUXURY_STALL", "BUILDING_PART_MARKET_RED_TENT", "BUILDING_PART_MONK_STATUE", "BUILDING_PART_MONUMENT_POLE", "BUILDING_PART_OFFICINAL_GARDEN_ARCHED_TRELLIS", "BUILDING_PART_OFFICINAL_GARDEN_BUSHY_PLANT", "BUILDING_PART_OFFICINAL_GARDEN_CLIMBER_PLANT", "BUILDING_PART_OFFICINAL_GARDEN_COMFREY", "BUILDING_PART_OFFICINAL_GARDEN_FOUNTAIN", "BUILDING_PART_OFFICINAL_GARDEN_HERBS_CORNER", "BUILDING_PART_OFFICINAL_GARDEN_PERGOLA", "BUILDING_PART_OFFICINAL_GARDEN_ROUND_FLOWERBED", "BUILDING_PART_OFFICINAL_GARDEN_SAGE", "BUILDING_PART_OFFICINAL_GARDEN_SAGE_AND_MINT", "BUILDING_PART_OFFICINAL_GARDEN_SPROUTS", "BUILDING_PART_OFFICINAL_GARDEN_WOODEN_FENCE", "BUILDING_PART_OFFICINAL_GARDEN_YARROW", "BUILDING_PART_OFFICINAL_GARDEN_YARROW_AND_SPROUTS", "BUILDING_PART_PLANT_ARCH", "BUILDING_PART_QUARRY_CART", "BUILDING_PART_QUARRY_CART_GOLD", "BUILDING_PART_QUARRY_CART_IRON", "BUILDING_PART_QUARRY_CART_MARBLE", "BUILDING_PART_QUARRY_CRANE", "BUILDING_PART_QUARRY_GOLD_DEPOSIT", "BUILDING_PART_QUARRY_GOLD_QUARY", "BUILDING_PART_QUARRY_IRON_DEPOSIT", "BUILDING_PART_QUARRY_IRON_QUARRY", "BUILDING_PART_QUARRY_MARBLE_DEPOSIT", "BUILDING_PART_QUARRY_MARBLE_QUARRY", "BUILDING_PART_QUARRY_QUARTZ_DEPOSIT", "BUILDING_PART_QUARRY_QUARTZ_QUARRY", "BUILDING_PART_QUARRY_ROCK_HOLDER", "BUILDING_PART_QUARRY_SMALL_CRANE", "BUILDING_PART_QUARRY_STONE_DEPOSIT", "BUILDING_PART_QUARRY_STONE_QUARRY", "BUILDING_PART_ROAD_SIGN", "BUILDING_PART_SAWMILL", "BUILDING_PART_SCULPTURE_FOUNTAIN_GOLD_FEMALE", "BUILDING_PART_SCULPTURE_FOUNTAIN_GOLD_MALE_LABOR", "BUILDING_PART_SCULPTURE_FOUNTAIN_GOLD_MALE_SHOVEL", "BUILDING_PART_SCULPTURE_FOUNTAIN_GOLD_MALE_STANDING", "BUILDING_PART_SCULPTURE_FOUNTAIN_MARBLE_FEMALE", "BUILDING_PART_SCULPTURE_FOUNTAIN_MARBLE_MALE_LABOR", "BUILDING_PART_SCULPTURE_FOUNTAIN_MARBLE_MALE_SHOVEL", "BUILDING_PART_SCULPTURE_FOUNTAIN_MARBLE_MALE_STANDING", "BUILDING_PART_SCULPTURE_FOUNTAIN_OCTOGONAL_BASE", "BUILDING_PART_SCULPTURE_FOUNTAIN_PEDESTAL", "BUILDING_PART_SCULPTURE_FOUNTAIN_SMALL_PEDESTAL", "BUILDING_PART_SCULPTURE_FOUNTAIN_SQUARE_BASE", "BUILDING_PART_SHEEP_FARM", "BUILDING_PART_SHEEP_STATUE", "BUILDING_PART_SHRINE_CANDLE", "BUILDING_PART_SHRINE_CANDLES", "BUILDING_PART_SHRINE_FLOWER_BLUE", "BUILDING_PART_SHRINE_FLOWER_POT", "BUILDING_PART_SHRINE_FLOWER_POT_2", "BUILDING_PART_SHRINE_FLOWER_RED", "BUILDING_PART_SHRINE_LARGE_ALCOVE", "BUILDING_PART_SHRINE_LARGE_ALTAR", "BUILDING_PART_SHRINE_PILGRIM_LOCATION", "BUILDING_PART_SHRINE_PLANTS", "BUILDING_PART_SHRINE_SMALL_ALCOVE", "BUILDING_PART_SHRINE_SMALL_ALTAR", "BUILDING_PART_SHRINE_STATUE", "BUILDING_PART_SHRINE_STEPS", "BUILDING_PART_SHRINE_STONE", "BUILDING_PART_SHRINE_STONE_BENCH", "BUILDING_PART_STAINED_GLASS_KING_AND_MONK", "BUILDING_PART_STAINED_GLASS_MOTHER_AND_CHILD", "BUILDING_PART_STONECUTTER_CAMP", "BUILDING_PART_STONEMASON", "BUILDING_PART_TAILOR_WORKSHOP", "BUILDING_PART_VILLAGE_CENTER", "BUILDING_PART_VINEYARD", "BUILDING_PART_WAREHOUSE", "BUILDING_PART_WEAPONSMITH", "BUILDING_PART_WEAVER_HUT", "BUILDING_PART_WELL", "BUILDING_PART_WHEAT_FARM", "BUILDING_PART_WINDMILL", "BUILDING_PART_WOODCUTTER_CAMP", "BUILDING_PART_WOODEN_GATE"
+																																																																																																																																																																																											}
 	}, 
 	categories = {
-		TOPIARY = {
+		MAX = {
+			BUILDING_PART_GATE_WINDOW = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_AUTOMATE_FOUNTAIN_BIRD = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_MONK_STATUE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_BUILDER_WORKSHOP_STAINED_GLASS_WORKSHOP = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_BREWERY = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_HOUSING_SERF_DENSITY_2 = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_CROSS_SQUARE_STEPPED_BASE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_KNIGHT_STATUE_SQUARE_PEDESTAL = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_FENCE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_DECORATIVE_TREE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_LUSH_GARDEN_DIAMOND_FLOWERBED = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_HOUSING_CITIZEN_DENSITY_1 = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_WOODEN_GATE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_KNIGHT_STATUE_SMALL_OCTOGONAL_PEDESTAL = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_SHRINE_STEPS = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_QUARRY_CART_IRON = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
 			BUILDING_PART_LUSH_GARDEN_OVALE_BUSH = {
 				BuildingRegistered = true, 
 					AssetRegistered = true
 					}, 
-			BUILDING_PART_LUSH_GARDEN_OGIVE_BUSH = {
-				BuildingRegistered = true, 
-					AssetRegistered = true
-					}
-		}, 
-		FURNITURE = {
-			BUILDING_PART_MARKET_BENCH = {
+			BUILDING_PART_OFFICINAL_GARDEN_YARROW = {
 				BuildingRegistered = true, 
 					AssetRegistered = true
 					}, 
-			BUILDING_PART_SHRINE_STONE_BENCH = {
-				BuildingRegistered = true, 
-					AssetRegistered = true
-					}
-		}, 
-		FRIENDS = {
-			Coon_Cat = {
-				Order = 2
-				}, 
-			Collie_Dog = {
-				Order = 1
-				}
-		}, 
-		EDIBLES = {
-			BUILDING_PART_OFFICINAL_GARDEN_SAGE = {
+			BUILDING_PART_GATE_ROUND_WATCHTOWER = {
 				BuildingRegistered = true, 
 					AssetRegistered = true
 					}, 
-			BUILDING_PART_OFFICINAL_GARDEN_SPROUTS = {
+			BUILDING_PART_FOUNTAIN = {
 				BuildingRegistered = true, 
 					AssetRegistered = true
-					}
-		}, 
-		FLORA = {
-			BUILDING_PART_LUSH_GARDEN_SMALL_TREE = {
+					}, 
+			BUILDING_PART_SCULPTURE_FOUNTAIN_GOLD_MALE_SHOVEL = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_GRANARY = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_LUSH_GARDEN_QUATREFOIL_FLOWERBED = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_KNIGHT_STATUE_ALCOVED_PEDESTAL = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_GATE_BARRACKS = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_DAIRY_FARM = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_STAINED_GLASS_MOTHER_AND_CHILD = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_SHRINE_STONE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_GATE_ROUND_TOWER = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_QUARRY_CART_MARBLE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_LUSH_GARDEN_STONE_BENCH = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_GATE_TOWER = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_OFFICINAL_GARDEN_ROUND_FLOWERBED = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_MARKET_RED_TENT = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_ROAD_SIGN = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_QUARRY_CART = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_HOP_FARM = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_OFFICINAL_GARDEN_FOUNTAIN = {
 				BuildingRegistered = true, 
 					AssetRegistered = true
 					}, 
@@ -65,7 +167,587 @@
 				BuildingRegistered = true, 
 					AssetRegistered = true
 					}, 
+			BUILDING_PART_QUARRY_GOLD_DEPOSIT = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_QUARRY_CART_GOLD = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_SCULPTURE_FOUNTAIN_OCTOGONAL_BASE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_QUARRY_SMALL_CRANE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_STONECUTTER_CAMP = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_WAREHOUSE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_SHRINE_CANDLE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_GATE_SMALL_WINDOW_CLOSED = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_KNIGHT_STATUE_MALE_ARCHER = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_LUSH_GARDEN_ESPALIER_FENCE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_MARKET_GREEN_TENT = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_LUSH_GARDEN_BUSH = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_MARKET_LUXURY_STALL = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_QUARRY_QUARTZ_DEPOSIT = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_DECORATIVE_BUSH = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_OFFICINAL_GARDEN_ARCHED_TRELLIS = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_QUARRY_CRANE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_IRON_SMELTER = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_STONEMASON = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_SHRINE_LARGE_ALTAR = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_SAWMILL = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_CROSS_HEXAGON_SMALL_PEDESTAL = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_CROSS_SQUARE_PEDESTAL = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_SHRINE_CANDLES = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_WEAPONSMITH = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_LUSH_GARDEN_LARGE_TREE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_HOUSING_SERF_DENSITY_1 = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_GATE_WALL_HERALDIC_BLUE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_OFFICINAL_GARDEN_SAGE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_KNIGHT_STATUE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_OFFICINAL_GARDEN_COMFREY = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_SHRINE_LARGE_ALCOVE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_MARKET_GOODS_STALL = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_QUARRY_GOLD_QUARY = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_LUSH_GARDEN_BUSHES_PERGOLA = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_GLASS_SMELTER = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_SHRINE_PLANTS = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_COAL_HUT = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_QUARRY_MARBLE_QUARRY = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_LUSH_GARDEN_FOUNTAIN = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_SCULPTURE_FOUNTAIN_MARBLE_FEMALE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_MARKET_BLUE_TENT = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_QUARRY_STONE_DEPOSIT = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_WEAVER_HUT = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_SHRINE_STONE_BENCH = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_KNIGHT_STATUE_FEMALE_KNIGHT = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_TAILOR_WORKSHOP = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_SHRINE_SMALL_ALCOVE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_VINEYARD = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_SHRINE_PILGRIM_LOCATION = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_SHRINE_STATUE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_MARKET_BARRELS = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_GATE_WALL_HERALDIC_STRIPED = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_LUSH_GARDEN_ROUND_BUSH = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_BLACKSMITH = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_VILLAGE_CENTER = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_LUSH_GARDEN_ROSES_PERGOLA = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_SHEEP_STATUE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_SCULPTURE_FOUNTAIN_PEDESTAL = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_MONUMENT_POLE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_WINDMILL = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_GATE_SMALL_WINDOW_PLANK = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_CHEESE_MAKER = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
 			BUILDING_PART_SHRINE_FLOWER_BLUE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_GATE_PORTICULLIS = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_SCULPTURE_FOUNTAIN_GOLD_MALE_LABOR = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_GATE_DOOR = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_SCULPTURE_FOUNTAIN_MARBLE_MALE_LABOR = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_OFFICINAL_GARDEN_WOODEN_FENCE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_SCULPTURE_FOUNTAIN_GOLD_FEMALE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_CROSS_GOLDEN_CROSS = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_GATE_WALL_HERALDIC_SPLIT = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_HUNTERS_HUT = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_AUTOMATE_FOUNTAIN_TOP = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_SHRINE_FLOWER_POT_2 = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_LUSH_GARDEN_OGIVE_BUSH = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_WOODCUTTER_CAMP = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_QUARRY_QUARTZ_QUARRY = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_SCULPTURE_FOUNTAIN_MARBLE_MALE_SHOVEL = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_BUILDER_WORKSHOP = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_AUTOMATE_FOUNTAIN_BASIN = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_STAINED_GLASS_KING_AND_MONK = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_OFFICINAL_GARDEN_HERBS_CORNER = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_WHEAT_FARM = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_SCULPTURE_FOUNTAIN_MARBLE_MALE_STANDING = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_SCULPTURE_FOUNTAIN_SQUARE_BASE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_AUTOMATE_FOUNTAIN_STEPPED_BASE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_GOLD_SMELTER = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_OFFICINAL_GARDEN_PERGOLA = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_DECORATIVE_CYPRES = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_LUSH_GARDEN_FLOWER_BUSH = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_QUARRY_MARBLE_DEPOSIT = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_KNIGHT_STATUE_MALE_KNIGHT = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_WELL = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_LUSH_GARDEN_PILAR = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_OFFICINAL_GARDEN_CLIMBER_PLANT = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_KNIGHT_STATUE_BANNER = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_QUARRY_IRON_DEPOSIT = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_GATE_WALL_HERALDIC_SPLICED = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_MARKET_LUXURY_SIGN = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_KNIGHT_STATUE_OCTOGONAL_PLINTH = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_OFFICINAL_GARDEN_YARROW_AND_SPROUTS = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_LUSH_GARDEN_MEDIUM_TREE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_GATE_WOODEN_GATE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_GATE_WATCHTOWER = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_CROSS_HEXAGON_STEPPED_BASE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_HOUSING_CITIZEN_DENSITY_2 = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_LUSH_GARDEN_WATER_BASIN = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_FISHING_HUT = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_OFFICINAL_GARDEN_SAGE_AND_MINT = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_GATE_SMALL_WINDOW = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_AUTOMATE_FOUNTAIN_JACQUEMART = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_MARKET_BENCH = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_GATE_BUTTRESS = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_GATE_BRATTICE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_LUSH_GARDEN_SMALL_TREE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_GATE_WALL_FLAG = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_MARKET_FOOD_STALL = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_COOPERAGE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_GATHERING_CAMP = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_QUARRY_ROCK_HOLDER = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_MARKET_FOOD_SIGN = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_GATE_WALL_BANNER = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_SHRINE_FLOWER_POT = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_LUSH_GARDEN_ROUND_FLOWERBED = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_BAKERY = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_QUARRY_STONE_QUARRY = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_FORESTER = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_KNIGHT_STATUE_OCTOGONAL_PEDESTAL = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_KNIGHT_STATUE_SQUARE_PLINTH = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_SCULPTURE_FOUNTAIN_SMALL_PEDESTAL = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_KNIGHT_STATUE_SMALL_BANNER = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_OFFICINAL_GARDEN_BUSHY_PLANT = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_QUARRY_IRON_QUARRY = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_AUTOMATE_FOUNTAIN_TOWER = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_KNIGHT_STATUE_GOLD_FEMALE_KNIGHT = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_MARKET_GOODS_SIGN = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_BUILDER_WORKSHOP_SCULPTURE_WORKSHOP = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_SHRINE_SMALL_ALTAR = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_SHEEP_FARM = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_PLANT_ARCH = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_SCULPTURE_FOUNTAIN_GOLD_MALE_STANDING = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_MARKET_FENCE = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_OFFICINAL_GARDEN_SPROUTS = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_CROSS_SQUARE_SMALL_PEDESTAL = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			BUILDING_PART_CROSS_HEXAGON_PEDESTAL = {
 				BuildingRegistered = true, 
 					AssetRegistered = true
 					}
@@ -74,17 +756,8 @@
 	monuments = {
 		REMIX = {
 			Categories = {
-				FLORA = {
-				}, 
-				FURNITURE = {
-				}, 
-				TOPIARY = {
-				}, 
-				EDIBLES = {
-				}, 
-				FRIENDS = {
-					Order = 1
-					}
+				MAX = {
+				}
 			}
 		}
 	}, 
