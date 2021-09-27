@@ -8,7 +8,7 @@ local myMod, GP = ...
 GP:log("config.lua", GP:version())
 
 -- MY CONFIG Mod Name
-local modName = "remixer"
+local modName = "REMIX"
 
 -- MY CONFIG Remix
 local remix = {
@@ -52,7 +52,7 @@ function GP:config()
 
     -- Create a remix monument.
     config.monuments[modName] = config.monuments[modName] or
-                                    {Categories = {}, Type = "MODS"}
+                                    {Categories = {}}
 
     -- Remix each category on the list.
     for category, partsList in pairs(config.remix) do

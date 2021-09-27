@@ -71,7 +71,7 @@ function GP:config()
 
     -- Create a remix monument.
     config.monuments[modName] = config.monuments[modName] or
-                                    {Categories = {}, Type = "MODS"}
+                                    {Categories = {}}
 
     -- Remix each category on the list.
     for category, partsList in pairs(config.remix) do
