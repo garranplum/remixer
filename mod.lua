@@ -19,14 +19,14 @@
 -- You can change this line anytime and hot reload Foundation (Ctrl-Shift-R) to see changes.
 
 -- MY CONFIG File
-local configFile = "configVanilla.lua"
+local configFile = "config.lua"
 
 -- To remix, add, remove, and change the category names and part names in that file.
 
 -- SAMPLE MIXES
 --
 -- SAMPLE 1: Vanilla Coke
--- The basic configVanilla.lua, used if you change nothing else, loads only vanilla or built-in parts.
+-- The basic configVanilla.lua, (same as config.lua), loads only vanilla or built-in parts.
 -- All costs, resource requirements, and upkeep requirements are removed from any parts you remix.
 -- Your remixed parts have all their other original characteristics, such as jobs.
 -- You can hot reload (Ctrl-Shift-R) parts changes or config files, if part IDs are correct.
