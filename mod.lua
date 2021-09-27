@@ -19,7 +19,7 @@
 -- You can change this line anytime and hot reload Foundation (Ctrl-Shift-R) to see changes.
 
 -- MY CONFIG File
-local configFile = "confiVanilla.lua"
+local configFile = "configVanilla.lua"
 
 -- To remix, add, remove, and change the category names and part names in that file.
 
