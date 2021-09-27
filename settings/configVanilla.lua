@@ -16,7 +16,7 @@ local remix = {
         "BUILDING_PART_SHRINE_FLOWER_RED", "BUILDING_PART_SHRINE_FLOWER_BLUE",
         "BUILDING_PART_LUSH_GARDEN_SMALL_TREE",
     },
-    FURNITURE = {"BUILDING_PART_MARKET_BENCH"},
+    FURNITURE = {"BUILDING_PART_MARKET_BENCH",},
     STORAGE = {"BUILDING_PART_MARKET_BARRELS"},
 }
 
@@ -49,18 +49,14 @@ function GP:config()
         nodeTypes = nodeTypes or {},
         jobs = jobs or {},
         workplaces = workplaces or {},
-        monuments = monuments or {},
+        monuments = monuments or {}
     }
-
 
     -- Create a remix monument.
-    config.monuments.REMIX = {
-        Categories = {},
-        Type = "MODS"
-    }
-    
+    config.monuments[modName] = config.monuments[modName] or {Categories = {}, Type = "MODS"}
+
     -- Remix each category on the list.
-    for category, partsList in pairs(config.remix) do 
+    for category, partsList in pairs(config.remix) do
 
         -- Add the category in config.categories.
         config.categories[category] = {}
@@ -70,8 +66,8 @@ function GP:config()
 
             -- Build a partEntry
             local partEntry = {
-                    AssetRegistered = true,
-                    BuildingRegistered = true
+                AssetRegistered = true,
+                BuildingRegistered = true
             }
 
             -- Add the partEntry to the config category
@@ -80,11 +76,10 @@ function GP:config()
         end
 
         -- Add the category to the monument.
-        config.monuments.REMIX.Categories[category] = {}
+        config.monuments[modName].Categories[category] = {}
 
     end
 
     -- Return canonized copy.
     return GP:copyTable(config)
 end
-

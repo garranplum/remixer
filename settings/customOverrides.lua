@@ -8,8 +8,10 @@ local myMod, GP = ...
 
 GP:log("script/overrides.lua",GP:version())
 
+-- Set building and menu visual part.
 myMod:override({
     Id = GP:magicWords().building.idPrefix .. GP:config().modName,
     AssetCoreBuildingPart = "BUILDING_PART_LUSH_GARDEN_SMALL_TREE"
 })
+
 

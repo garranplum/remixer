@@ -19,27 +19,30 @@
 -- You can change this line anytime and hot reload Foundation (Ctrl-Shift-R) to see changes.
 
 -- MY CONFIG File
-local configFile = "configFbx.lua"
+local configFile = "confiVanilla.lua"
 
 -- To remix, add, remove, and change the category names and part names in that file.
 
 -- SAMPLE MIXES
 --
 -- SAMPLE 1: Vanilla Coke
--- The basic config.lua, used if you change nothing else, loads only vanilla or built-in parts.
+-- The basic configVanilla.lua, used if you change nothing else, loads only vanilla or built-in parts.
+-- All costs, resource requirements, and upkeep requirements are removed from any parts you remix.
+-- Your remixed parts have all their other original characteristics, such as jobs.
+-- You can hot reload (Ctrl-Shift-R) parts changes or config files, if part IDs are correct.
 -- You can see a full list of vanilla part names here:
 -- https://www.polymorph.games/foundation/modding/assets/building_part
 
 
 -- SAMPLE 2: Coke Float
--- The configImport.lua file shows an example of importing parts from a dependency.
+-- The configMods.lua file shows an example of importing parts from a dependency.
 -- You must have the exact part ID used by that mod to register the part.
 -- This example requires Barrel O' Fish: https://foundation.mod.io/barrel-ofish
 -- Your dependencies must be loaded before Remixer! in the mod load order in a save or new game.
 -- If dependencies are not present or loaded in the wrong order, games will not load.
 -- It is good pratice to declare your dependencies in mod.json.
 -- Remixer does not list Barrel O'Fish as a dependency because the base config.lua doesn't use it.
--- An example modFishDependency.json file is included which you can use to replace mod.json.
+-- An example modDependency.json file is included which you can use to replace mod.json.
 
 -- SAMPLE 3: Chocolate Sundae with Hot Fudge
 -- The configFbx.lua file shows an example of adding your own .fbx files to your mod.
@@ -49,15 +52,16 @@ local configFile = "configFbx.lua"
 -- NAMES IN THE USER INTERFACE
 -- Part names in the building dialog come from the text.json file in localization\en.
 -- Changing the categories in config.lua will require updating that file.
+-- Names for vanilla parts and parts from other mods can be overriden with the right key.
 -- The build dialog shows the key name instead of the text for any missing keys and values.
 -- Adding .fbx parts, workplaces, or jobs requires those entries in the text.json file.
--- See Barrel O'Fish for an example of a complete text.json.
+-- See Barrel O'Fish for an example of complete text.json.
 
 
 -- MODULE MOD.LUA
 -- Main Entrypoint & Loader
 -- DECLARE: GPS Version
-local version = "2.8.0"
+local version = "3.0"
 
 -- DECLARE: GP Object
 local GP = {}
