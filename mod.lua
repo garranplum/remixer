@@ -13,15 +13,24 @@
 --
 --
 
+
+-- BUG NOTICE
+--
+-- I fix all bugs! Please report them at The Orchard link above.
+-- Or leave a comment at: https://foundation.mod.io/remixer
+-- Thank you. :-)
+--
+--
+
 -- BASIC CONFIGURATION
--- Remixer ships with three config.lua examples you can use to make your own remixes.
+-- Remixer! includes several config.lua examples you can use to make your own remixes.
 -- Change the line below to the name of file you wish to use, or make your own.
--- You can change this line anytime and hot reload Foundation (Ctrl-Shift-R) to see changes.
 
 -- MY CONFIG File
-local configFile = "config.lua"
+local configFile = "configMax.lua"
 
--- To remix, add, remove, and change the category names and part names in that file.
+-- To remix: add, remove, or change the category names and part names in the file you named above.
+-- You can change this line anytime and hot reload Foundation (Ctrl-Shift-R) to see changes.
 
 -- SAMPLE MIXES
 --
@@ -57,33 +66,17 @@ local configFile = "config.lua"
 -- Adding .fbx parts, workplaces, or jobs requires those entries in the text.json file.
 -- See Barrel O'Fish for an example of complete text.json.
 
-
 -- MODULE MOD.LUA
 -- Main Entrypoint & Loader
--- DECLARE: GPS Version
-local version = "3.0"
 
--- DECLARE: GP Object
-local GP = {}
+-- CREATE: GP Object 
+local GP = {
+    mod = foundation.createMod()
+}
 
--- FUNCTION: Version
--- Return GPS version number inside GP functions.
-function GP:version()
-    return version
-end
-
--- FUNCTION: Register Mod
--- Registers a mod with Foundation.
--- FUNCTIONAL, GAME EFFECT
-function GP:registerMod()
-    GP.mod = foundation.createMod()
-    GP.mod:log("GPS " .. GP:version() .. " by Garran Plum")
-    GP.mod:log("GP | " .. "https://mod.io/members/garranplum")
-end
-
--- CALL: Register Mod
--- Registers this mod with Foundation.
-GP:registerMod()
+-- EXECUTE FILE: Loader
+-- Sets up GPS.
+GP.mod:dofile("gp/loader.lua", GP)
 
 -- EXECUTE FILE: Global Foundation Functions
 -- Defines Foundation-specific functions used by all GP mods.
