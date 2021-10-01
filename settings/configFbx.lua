@@ -14,14 +14,16 @@ local modName = "REMIX"
 local remix = {
     TOPIARY = {
         "BUILDING_PART_LUSH_GARDEN_OGIVE_BUSH",
-        "BUILDING_PART_LUSH_GARDEN_OVALE_BUSH",
+        "BUILDING_PART_LUSH_GARDEN_OVALE_BUSH"
 
     },
     EDIBLES = {
         "BUILDING_PART_OFFICINAL_GARDEN_SPROUTS",
         "BUILDING_PART_OFFICINAL_GARDEN_SAGE"
     },
-    FURNITURE = {"BUILDING_PART_SHRINE_STONE_BENCH","BUILDING_PART_MARKET_BENCH"},
+    FURNITURE = {
+        "BUILDING_PART_SHRINE_STONE_BENCH", "BUILDING_PART_MARKET_BENCH"
+    },
     FLORA = {
         "BUILDING_PART_SHRINE_FLOWER_RED", "BUILDING_PART_SHRINE_FLOWER_BLUE",
         "BUILDING_PART_LUSH_GARDEN_SMALL_TREE"
@@ -37,7 +39,14 @@ local categories = {
 }
 
 -- MY CONFIG Monuments
-local monuments = {[modName] = {Categories = {FRIENDS = {Order = 1}}}}
+local monuments = {
+    [modName] = {
+        Categories = {
+            FRIENDS = {Order = 1}, 
+            FLORA = {Order = 2},
+        }
+    }
+}
 
 -- 
 --
@@ -70,8 +79,7 @@ function GP:config()
     }
 
     -- Create a remix monument.
-    config.monuments[modName] = config.monuments[modName] or
-                                    {Categories = {}}
+    config.monuments[modName] = config.monuments[modName] or {Categories = {}}
 
     -- Remix each category on the list.
     for category, partsList in pairs(config.remix) do
@@ -93,10 +101,14 @@ function GP:config()
 
         end
 
-        -- Add the category to the monument.
-        config.monuments[modName].Categories[category] = {}
+        -- Add the category to the monument if not already in config.
+        if not (config.monuments[modName].Categories[category]) then
+            config.monuments[modName].Categories[category] = {}
+        end
 
     end
+
+    GP:writeTable(config)
 
     -- Return canonized copy.
     return GP:copyTable(config)
