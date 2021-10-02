@@ -35,17 +35,13 @@ local modelFiles = {friends = {"FRIENDS"}}
 
 -- MY CONFIG Categories
 local categories = {
-    FRIENDS = {Coon_Cat = {Order = 2}, Collie_Dog = {Order = 1}}
+    FRIENDS = {Collie_Dog = {Order = 1}, Coon_Cat = {Order = 2}},
+    FLORA = {BUILDING_PART_SHRINE_FLOWER_BLUE = {Order = 1}},
 }
 
 -- MY CONFIG Monuments
 local monuments = {
-    [modName] = {
-        Categories = {
-            FRIENDS = {Order = 1}, 
-            FLORA = {Order = 2},
-        }
-    }
+    [modName] = {Categories = {FLORA = {Order = 1}, FRIENDS = {Order = 2}}}
 }
 
 -- 
@@ -56,61 +52,21 @@ local monuments = {
 -- WARNING!
 --
 -- MY CONFIG Ends Here. Changing code below this line will change *GPS*, not just your mod!
+-- As an alternative to the code above, you may supply your own config table to GP.loaded.
 --
 --
---
+-- Create the config table.
+local config = {
+    version = GP:version(),
+    remix = remix or {},
+    modName = modName,
+    modelFiles = modelFiles or {},
+    categories = categories or {},
+    nodeTypes = nodeTypes or {},
+    jobs = jobs or {},
+    workplaces = workplaces or {},
+    monuments = monuments or {}
+}
 
--- GP Function Config
--- Returns a copy of the remixed, canonized configuration.
--- CLOSURES, IDEMPOTENT
-function GP:config()
-
-    -- Create the config table.
-    local config = {
-        version = GP:version(),
-        remix = remix or {},
-        modName = modName,
-        modelFiles = modelFiles or {},
-        categories = categories or {},
-        nodeTypes = nodeTypes or {},
-        jobs = jobs or {},
-        workplaces = workplaces or {},
-        monuments = monuments or {}
-    }
-
-    -- Create a remix monument.
-    config.monuments[modName] = config.monuments[modName] or {Categories = {}}
-
-    -- Remix each category on the list.
-    for category, partsList in pairs(config.remix) do
-
-        -- Add the category in config.categories.
-        config.categories[category] = {}
-
-        -- Remix each part in the category.
-        for index, partId in ipairs(partsList) do
-
-            -- Build a partEntry
-            local partEntry = {
-                AssetRegistered = true,
-                BuildingRegistered = true
-            }
-
-            -- Add the partEntry to the config category
-            config.categories[category][partId] = partEntry
-
-        end
-
-        -- Add the category to the monument if not already in config.
-        if not (config.monuments[modName].Categories[category]) then
-            config.monuments[modName].Categories[category] = {}
-        end
-
-    end
-
-    GP:writeTable(config)
-
-    -- Return canonized copy.
-    return GP:copyTable(config)
-end
-
+-- Use global to return config to loader :-(.
+GP.loaded = config

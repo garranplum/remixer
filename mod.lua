@@ -27,7 +27,7 @@
 -- Change the line below to the name of file you wish to use, or make your own.
 
 -- MY CONFIG File
-local configFile = "configDetailer.lua"
+local configFile = "configFbx.lua"
 
 -- To remix: add, remove, or change the category names and part names in the file you named above.
 -- You can change this line anytime and hot reload Foundation (Ctrl-Shift-R) to see changes.

@@ -1,0 +1,11 @@
+{
+	modelFiles = , 
+		jobs = , 
+			nodeTypes = , 
+				remix = , 
+					categories = , 
+						monuments = , 
+							workplaces = , 
+								version = 3.0, 
+									modName = "REMIX"
+									}
