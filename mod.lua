@@ -60,9 +60,6 @@ local configFile = "config.lua"
 -- Adding .fbx parts, workplaces, or jobs requires those entries in the text.json file.
 -- See Barrel O'Fish for an example of complete text.json.
 
--- MY CONFIG File
-local configFile = "config.lua"
-
 -- MODULE MOD.LUA
 -- Main Entrypoint & Loader
 
