@@ -177,6 +177,9 @@ local remix = {
     -- }
 }
 
+-- MY CONFIG Logo
+local logo = "BUILDING_PART_LUSH_GARDEN_SMALL_TREE"
+
 -- 
 --
 --
@@ -199,7 +202,8 @@ local config = {
     jobs = jobs or {},
     workplaces = workplaces or {},
     monuments = monuments or {},
-    buildings = buildings or {}
+    buildings = buildings or {},
+    logo = logo or {}
 }
 
 -- Use global to return config to loader :-(.
