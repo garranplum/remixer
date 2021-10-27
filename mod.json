@@ -2,7 +2,7 @@
 	"Name": "Remixer!",
 	"Author": "GarranPlum",
 	"Description": "Remix parts from your favorite mods, the base game, and .fbx files to create your own mod without coding! Built with GPS.",
-	"Version": "1.1.1",
+	"Version": "2.0.0",
 
 	"Dependencies": []
 }

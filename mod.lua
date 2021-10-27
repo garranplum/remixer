@@ -4,7 +4,6 @@
 -- Remix parts from the base game, from any mod, or from your own files!
 -- Requires no code changes (only config changes) to add parts.
 -- An example of simple, declarative modding with GPS.
-
 -- Get more GP mods at mod.io:
 -- https://mod.io/members/garranplum
 --
@@ -12,8 +11,6 @@
 -- https://discord.gg/aeehVjMtzB
 --
 --
-
-
 -- BUG NOTICE
 --
 -- I fix all bugs! Please report them at The Orchard link above.
@@ -21,13 +18,11 @@
 -- Thank you. :-)
 --
 --
-
 -- BASIC CONFIGURATION
 -- Remixer! includes several config.lua examples you can use to make your own remixes.
 -- Change the line below to the name of file you wish to use, or make your own.
-
 -- MY CONFIG File
-local configFile = "configFbx.lua"
+local configFile = "config.lua"
 
 -- To remix: add, remove, or change the category names and part names in the file you named above.
 -- You can change this line anytime and hot reload Foundation (Ctrl-Shift-R) to see changes.
@@ -41,7 +36,6 @@ local configFile = "configFbx.lua"
 -- You can hot reload (Ctrl-Shift-R) parts changes or config files, if part IDs are correct.
 -- You can see a full list of vanilla part names here:
 -- https://www.polymorph.games/foundation/modding/assets/building_part
-
 
 -- SAMPLE 2: Coke Float
 -- The configMods.lua file shows an example of importing parts from a dependency.
@@ -66,13 +60,14 @@ local configFile = "configFbx.lua"
 -- Adding .fbx parts, workplaces, or jobs requires those entries in the text.json file.
 -- See Barrel O'Fish for an example of complete text.json.
 
+-- MY CONFIG File
+local configFile = "config.lua"
+
 -- MODULE MOD.LUA
 -- Main Entrypoint & Loader
 
 -- CREATE: GP Object 
-local GP = {
-    mod = foundation.createMod()
-}
+local GP = {mod = foundation.createMod()}
 
 -- EXECUTE FILE: Loader
 -- Sets up GPS.

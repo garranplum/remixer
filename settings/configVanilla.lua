@@ -5,8 +5,6 @@
 -- IMPORT GP OBJECT
 local myMod, GP = ...
 
-GP:log("config.lua", GP:version())
-
 -- MY CONFIG Mod Name
 local modName = "REMIX"
 
@@ -14,13 +12,11 @@ local modName = "REMIX"
 local remix = {
     FLORA = {
         "BUILDING_PART_SHRINE_FLOWER_RED", "BUILDING_PART_SHRINE_FLOWER_BLUE",
-        "BUILDING_PART_LUSH_GARDEN_SMALL_TREE",
+        "BUILDING_PART_LUSH_GARDEN_SMALL_TREE"
     },
-    FURNITURE = {"BUILDING_PART_MARKET_BENCH",},
-    STORAGE = {"BUILDING_PART_MARKET_BARRELS"},
+    FURNITURE = {"BUILDING_PART_MARKET_BENCH"},
+    STORAGE = {"BUILDING_PART_MARKET_BARRELS"}
 }
-
-
 
 -- 
 --
@@ -35,7 +31,7 @@ local remix = {
 --
 -- Create the config table.
 local config = {
-    version = GP:version(),
+    version = GP:gpsVersion(),
     remix = remix or {},
     modName = modName,
     modelFiles = modelFiles or {},
@@ -43,7 +39,8 @@ local config = {
     nodeTypes = nodeTypes or {},
     jobs = jobs or {},
     workplaces = workplaces or {},
-    monuments = monuments or {}
+    monuments = monuments or {},
+    buildings = buildings or {}
 }
 
 -- Use global to return config to loader :-(.
